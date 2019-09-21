@@ -9,6 +9,8 @@ public class PrintSystemProperties {
 		for (Object key : pros.keySet()) {
 			System.out.println(key  +  "--"  + pros.getProperty(key.toString()));
 		}
+		
+		System.out.println(System.getProperty("user.dir"));
 	}
 
 }
