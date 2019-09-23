@@ -17,11 +17,11 @@ public class SystemInfo {
 		}
 	}
 
-	protected static void displayJvmMemoryInfo() {
+	public static void displayJvmMemoryInfo() {
 		Runtime runTime = Runtime.getRuntime();
-		System.out.println("max momory: " + runTime.maxMemory());
-		System.out.println("total memory:" + runTime.totalMemory());
-		System.out.println("free memory:" + runTime.freeMemory());
+		System.out.println("max momory (M): " + (runTime.maxMemory()/ 1024 / 1024));
+		System.out.println("total memory(M):" + (runTime.totalMemory()/ 1024 / 1024));
+		System.out.println("free memory(M):" + (runTime.freeMemory()/ 1024 / 1024));
 
 		// max momory: 954728448 -Xmx
 		// total memory:253231104

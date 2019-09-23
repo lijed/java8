@@ -1,4 +1,4 @@
-package com.me.string;
+package com.me.jdk.string;
 
 import java.nio.charset.Charset;
 
