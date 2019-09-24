@@ -15,7 +15,7 @@ public class TestDirectByteBuffer {
 	 * -XX:MaxDirectMemorySize=1048576
 	 * 
 	 * 
-	 * -XX:+DisableExplicitGC Õâ¸ö²ÎÊı×÷ÓÃÊÇ½ûÖ¹´úÂëÖĞÏÔÊ¾µ÷ÓÃGC¡£´úÂëÈçºÎÏÔÊ¾µ÷ÓÃGCÄØ£¬Í¨¹ıSystem.gc()º¯Êıµ÷ÓÃ¡£Èç¹û¼ÓÉÏÁËÕâ¸öJVMÆô¶¯²ÎÊı£¬ÄÇÃ´´úÂëÖĞµ÷ÓÃSystem.gc()Ã»ÓĞÈÎºÎĞ§¹û£¬Ïàµ±ÓÚÊÇÃ»ÓĞÕâĞĞ´úÂëÒ»Ñù¡£
+	 * -XX:+DisableExplicitGC åœ¨ä»£ç ä¸­è°ƒç”¨system.gc ä¸ä¼šè§¦å‘garbage collectionã€‚ ä½†åœ¨å¿…è¦çš„æ—¶å€™ï¼ŒJVMè‡ªå·±å†³å®šGarbage collectionã€‚
 	 * 
 	 * @param args
 	 */
