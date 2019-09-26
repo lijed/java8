@@ -2,6 +2,7 @@ package com.paypal;
 
 import com.paypal.api.payments.Amount;
 import com.paypal.api.payments.DetailedRefund;
+import com.paypal.api.payments.Invoice;
 import com.paypal.api.payments.Refund;
 import com.paypal.api.payments.RefundRequest;
 import com.paypal.api.payments.Sale;
@@ -10,7 +11,7 @@ import com.paypal.base.rest.PayPalRESTException;
 
 public class RefundClient {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws PayPalRESTException {
 		String clientId = "AeiKcvZxLil8k8eol-19HETPyFQHcxxhACOYid8ImjTX910qjwx86wHIIjQ8I4e8IVseFwzsffk3oJHE";
 		String clientSecret = "ENyIL-zreLjpChUv7BQePSM3HniOL4DkYgrvsbpePWFFF05Lq4hvL2mPV6xXWcgkZp6jp9QdIuerHLAT";
 
@@ -39,5 +40,10 @@ public class RefundClient {
 		} catch (PayPalRESTException e) {
 		  System.err.println(e.getDetails());
 		}
+		
+		Invoice invoice = new Invoice();
+//		Sale saled =sale.get(apiContext, "37B62073GP4168636");
+		Sale saled =sale.get(apiContext, "2MA09869LY5281530");
+		System.out.println(saled.toString());
 	}
 }
