@@ -20,5 +20,33 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar" sourcepath="C:/Users/Administrator/.m2/repository/com/google/guava/guava/18.0/guava-18.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.google.guava"/>
+			<attribute name="maven.artifactId" value="guava"/>
+			<attribute name="maven.version" value="18.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Administrator/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="net.sf.json-lib"/>
+			<attribute name="maven.artifactId" value="json-lib"/>
+			<attribute name="maven.version" value="2.3"/>
+			<attribute name="maven.classifier" value="jdk15"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Administrator/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar" sourcepath="C:/Users/Administrator/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.velocity"/>
+			<attribute name="maven.artifactId" value="velocity-tools"/>
+			<attribute name="maven.version" value="2.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
