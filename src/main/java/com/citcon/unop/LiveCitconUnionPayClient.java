@@ -27,15 +27,20 @@ import org.apache.http.message.BasicNameValuePair;
  * Mimic the payment request
  *
  */
-public class CitconUnionPayClient {
+public class LiveCitconUnionPayClient {
+
+   
+	private static final String HTTPS_CITCONPAY_COM_CHOP_CHOP = "https://citconpay.com/chop/chop";
+
 //	   public static final String AUTHORIZATION_TOKEN_FOR_ALI ="Bearer 3656429F1D224BA5B2E052508277EBE2";
 //	   public static final String AUTHORIZATION_TOKEN_FOR_WECHAT ="Bearer 2CC63794834D41C1A4DE51912B8B9714"; 
+//public static final String CHOP_TOKEN_LIVE = "Bearer 2CC63794834D41C1A4DE51912B8B9714";
+   public static final String CHOP_TOKEN_LIVE = "Bearer 3656429F1D224BA5B2E052508277EBE2";
    
-   public static final String CHOP_TOKEN_DEV = "E92DD4FAA25C4450B31FBE14AE404EDE";
    public static final Charset URI_CHARSET = Charset.forName("UTF-8");
    
    public static void main(String[] args) {
-	   CitconUnionPayClient client = new CitconUnionPayClient();
+	   LiveCitconUnionPayClient client = new LiveCitconUnionPayClient();
 	   client.excute();
    }
    
@@ -58,9 +63,9 @@ public class CitconUnionPayClient {
                         }
                     }).build()).build();
          
-         HttpPost post = new HttpPost("https://uat.citconpay.com/chop/chop");
+         HttpPost post = new HttpPost(HTTPS_CITCONPAY_COM_CHOP_CHOP);
          
-         post.setHeader("Authorization", CHOP_TOKEN_DEV);
+         post.setHeader("Authorization", CHOP_TOKEN_LIVE);
          
          List<NameValuePair> requestBody = new ArrayList<NameValuePair>();
          requestBody.add(new BasicNameValuePair("amount", "100"));

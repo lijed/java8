@@ -61,6 +61,8 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.61</version>
 		</dependency>
+		
+		<dependency> <groupId>com.github.kountSdk</groupId> <artifactId>kount-ris-sdk</artifactId> <version>1.0.3</version> </dependency>
 
 	</dependencies>
 
