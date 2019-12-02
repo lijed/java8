@@ -7,21 +7,13 @@ import java.nio.charset.Charset;
 public interface StateChangeListener {
 	public void onStateChange(State oldState, State newState);
 
-	public static void log() {
-
-	}
+	public static void log() {}
 	
-	public static void log1() {
-		
-	}
+	public static void log1() {}
 
-	public default void doSomething() {
+	public default void doSomething() {}
 
-	}
-
-	public default void doSomething1() {
-
-	}
+	public default void doSomething1() {}
 	
 	default public void printUtf8Info(State state, OutputStream outputSteam) {
 		try {
