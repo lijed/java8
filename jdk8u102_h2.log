@@ -1,0 +1,45 @@
+Java HotSpot(TM) 64-Bit Server VM (25.102-b14) for windows-amd64 JRE (1.8.0_102-b14), built on Jun 22 2016 13:15:21 by "java_re" with MS VC++ 10.0 (VS2010)
+Memory: 4k page, physical 16433272k(1449064k free), swap 33193444k(8043340k free)
+CommandLine flags: -XX:+G1SummarizeRSetStats -XX:G1SummarizeRSetStatsPeriod=1 -XX:InitialHeapSize=262932352 -XX:MaxHeapSize=4206917632 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UnlockDiagnosticVMOptions -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC -XX:-UseLargePagesIndividualAllocation 
+Heap
+ garbage-first heap   total 258048K, used 1024K [0x00000006c5200000, 0x00000006c53007e0, 0x00000007c0000000)
+  region size 1024K, 2 young (2048K), 0 survivors (0K)
+ Metaspace       used 2691K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 287K, capacity 386K, committed 512K, reserved 1048576K
+ Cumulative RS summary
+
+ Recent concurrent refinement statistics
+  Processed 0 cards
+  Of 0 completed buffers:
+            0 (  0.0%) by concurrent RS threads.
+            0 (  0.0%) by mutator threads.
+  Did 0 coarsenings.
+  Concurrent RS threads times (s)
+          0.00     0.00     0.00     0.00
+  Concurrent sampling threads times (s)
+          0.00
+
+ Current rem set statistics
+  Total per region rem sets sizes = 835K. Max = 3K.
+           6K (  0.8%) by 2 Young regions
+           0K (  0.0%) by 0 Humonguous regions
+         828K ( 99.2%) by 250 Free regions
+           0K (  0.0%) by 0 Old regions
+   Static structures = 125K, free_lists = 0K.
+    0 occupied cards represented.
+            0 (  0.0%) entries by 2 Young regions
+            0 (  0.0%) entries by 0 Humonguous regions
+            0 (  0.0%) entries by 250 Free regions
+            0 (  0.0%) entries by 0 Old regions
+    Region with largest rem set = 251:(E)[0x00000006d4d00000,0x00000006d4e00000,0x00000006d4e00000], size = 3K, occupied = 0K.
+  Total heap region code root sets sizes = 4K.  Max = 0K.
+           0K (  7.7%) by 2 Young regions
+           0K (  0.0%) by 0 Humonguous regions
+           3K ( 92.3%) by 250 Free regions
+           0K (  0.0%) by 0 Old regions
+    8 code roots represented.
+            8 (100.0%) elements by 2 Young regions
+            0 (  0.0%) elements by 0 Humonguous regions
+            0 (  0.0%) elements by 250 Free regions
+            0 (  0.0%) elements by 0 Old regions
+    Region with largest amount of code roots = 251:(E)[0x00000006d4d00000,0x00000006d4e00000,0x00000006d4e00000], size = 0K, num_elems = 0.
