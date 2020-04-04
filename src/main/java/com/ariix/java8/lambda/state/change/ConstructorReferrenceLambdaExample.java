@@ -11,6 +11,7 @@ public class ConstructorReferrenceLambdaExample {
 	}
 
 	public static void main(String[] args) {
+		//Constructor
 		Factory factory = String::new;
 		String s = factory.create(new char[]{'a','b', 'c','d', 'e'});
 		System.out.println(s);
