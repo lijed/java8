@@ -10,6 +10,7 @@ public interface TimeClient {
     void setDate(int day, int month, int year);
     void setDateAndTime(int day, int month, int year,
                                int hour, int minute, int second);
+    
     LocalDateTime getLocalDateTime();
     
     static ZoneId getZoneId (String zoneString) {
@@ -22,6 +23,8 @@ public interface TimeClient {
         }
     }
     
+    
+    //Java Interface default Method
     default ZonedDateTime getZonedDateTime(String zoneString) {
         return ZonedDateTime.of(getLocalDateTime(), getZoneId(zoneString));
     }
