@@ -5,16 +5,16 @@ import java.util.function.Predicate;
 public class PredicateApp {
 
 	public static void main(String[] args) {
-		Predicate<Integer> isAdult = (s) -> {
-			if (s.intValue() >= 18) {
+		Predicate<Integer> isAdult = (age) -> {
+			if (age.intValue() >= 18) {
 				return true;
 			} else {
 				return false;
 			}
 		};
 		
-		Predicate<Integer> isExpert = (s) -> {
-			if (s.intValue() >= 10) {
+		Predicate<Integer> isExpert = (workYears) -> {
+			if (workYears.intValue() >= 10) {
 				return true;
 			} else {
 				return false;

@@ -19,6 +19,25 @@ public class ConstructorReferrenceLambdaExample {
 		factory = chars -> new String(chars);
 		s = factory.create("aaa".toCharArray());
 		System.out.println("result:" + s);
+
+
+		ConstructorReferrenceLambdaExample example = new ConstructorReferrenceLambdaExample();
+		example.test();
+	}
+
+	private void test() {
+		test(this::build);
+	}
+
+
+	public String build(char[] val) {
+		return new String(val);
+	}
+
+
+	public void test(Factory factory) {
+		String result = factory.create(new char[] {'a'});
+		System.out.println(result);
 	}
 
 }

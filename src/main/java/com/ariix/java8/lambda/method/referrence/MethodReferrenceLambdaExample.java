@@ -19,8 +19,17 @@ public class MethodReferrenceLambdaExample {
 		//Instance method referrence
 		errorPrinter = new FormattedPrinter()::println;
 		errorPrinter.print("testing......");
+
+
+
+		computeAndPrint(8, 9, canPrinter);
+
 	}
-	
+
+	public static void computeAndPrint(int a, int b, MyPrinter printer) {
+		int sum = a + b;
+		printer.print(String.valueOf(sum));
+	}
 	
 	public static class FormattedPrinter{
 		public static void print(String something) {

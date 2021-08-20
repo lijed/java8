@@ -19,6 +19,11 @@ public class PrintPersonWithSeachCriteria {
 						&& p.getAge() <= 25;
 			}
 		});
+
+		Person.printPersons(getPerson(), (p)-> {
+			return p.gender == Person.Sex.MALE && p.getAge() >= 18
+					&& p.getAge() <= 25;
+		});
 	}
 
 	public static List<Person> getPerson() {
